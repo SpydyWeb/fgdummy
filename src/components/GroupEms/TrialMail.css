@@ -1,0 +1,206 @@
+/* Trail Mail Details styling */
+.trail-mail-card {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.trail-mail-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.trail-mail-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.trail-mail-meta-row {
+  display: flex;
+  gap: 10px;
+  padding: 4px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.trail-mail-label {
+  min-width: 130px;
+  font-weight: 600;
+  color: #444;
+}
+
+.trail-mail-value {
+  flex: 1;
+  word-break: break-word;
+  color: #000;
+}
+
+.trail-mail-divider {
+  margin: 10px 0 6px;
+}
+
+.trail-mail-attachments-wrapper {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.trail-mail-attachment-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trail-mail-attachment-link {
+  padding: 0;
+}
+
+.trail-mail-attachment-size {
+  color: #888;
+  font-size: 11px;
+}
+
+.trail-mail-no-attachments {
+  font-style: italic;
+  color: #888;
+}
+
+.trail-mail-body {
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: normal;
+  scrollbar-gutter: stable;
+}
+
+.trail-mail-body-html {
+  word-break: break-word;
+}
+
+.trail-mail-body-text {
+  background: #fff;
+  white-space: pre-wrap;
+  font-family: Consolas, Menlo, monospace;
+  margin: 0;
+}
+
+.trail-mail-body::-webkit-scrollbar {
+  width: 8px;
+}
+.trail-mail-body::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+.trail-mail-body::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 6px;
+}
+.trail-mail-body::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.trail-mail-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.trail-mail-close-btn,
+.trail-mail-close-btn:focus,
+.trail-mail-close-btn:active {
+  background: #c21b17;
+  border-color: #c21b17;
+  color: #fff;
+  font-weight: 600;
+}
+
+.trail-mail-close-btn:hover {
+  background: #a4120f;
+  border-color: #a4120f;
+  color: #fff;
+}
+
+.trail-mail-empty {
+  font-size: 12px;
+  font-style: italic;
+  color: #888;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Two-column meta grid */
+.trail-mail-meta-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.trail-mail-grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.trail-mail-grid-cell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  min-height: 32px;
+}
+
+.trail-mail-grid-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.trail-mail-grid-value {
+  color: #000;
+  word-break: break-word;
+}
+
+/* Section headers and dividers */
+.trail-mail-section-header {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #444;
+  margin: 0 0 6px;
+}
+
+.trail-mail-section-divider {
+  margin: 12px 0 8px;
+}
+
+/* Ensure left alignment */
+.trail-mail-section-header,
+.trail-mail-attachments-wrapper,
+.trail-mail-body {
+  text-align: left;
+}
+
+.bulk-preview-meta-grid .trail-mail-grid-label {
+  color: #c21b17;
+}
+
+.bulk-preview-body {
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-word;
+}

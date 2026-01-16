@@ -1,0 +1,105 @@
+.tat-page-wrapper {
+  padding: 12px 16px;
+  background: #fff;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tat-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.tat-back-btn.ant-btn.ant-btn-link {
+  background-color: #c21b17 !important;
+  border-color: #c21b17 !important;
+  color: #fff !important;
+  font-weight: 700;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.tat-back-btn.ant-btn.ant-btn-link:hover,
+.tat-back-btn.ant-btn.ant-btn-link:focus {
+  background-color: #c21b17 !important;
+  border-color: #c21b17 !important;
+  color: #fff !important;
+}
+
+.tat-back-btn.ant-btn.ant-btn-link .anticon {
+  color: #fff !important;
+}
+
+.tat-title {
+  font-size: 16px;
+}
+
+.tat-actions-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.tat-edit-row {
+  background: #fffbe6 !important;
+}
+
+.tat-tabs .ant-tabs-nav {
+  margin-bottom: 8px;
+}
+
+.tat-form {
+  margin: 10px 0;
+}
+
+.tat-table {
+  margin-top: 8px;
+}
+
+.tat-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.tat-active-yes {
+  color: #0958d9;
+  font-weight: 500;
+}
+
+.tat-active-no {
+  color: #c21b17;
+  font-weight: 500;
+}
+
+.confirm-yes-btn {
+  background: #fff !important;
+  border: 2px solid #ff4d4f !important;
+  color: #ff4d4f !important;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.confirm-yes-btn:hover,
+.confirm-yes-btn:focus {
+  background: #ffecec !important;
+  border-color: #d9363e !important;
+  color: #d9363e !important;
+}
+
+.confirm-no-btn {
+  background: #ff4d4f !important;
+  border: 2px solid #ff4d4f !important;
+  color: #fff !important;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.confirm-no-btn:hover,
+.confirm-no-btn:focus {
+  background: #d9363e !important;
+  border-color: #d9363e !important;
+  color: #fff !important;
+}

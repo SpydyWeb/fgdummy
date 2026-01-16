@@ -1,0 +1,1206 @@
+/* GROUPEMS - CLEAN CSS FILE */
+
+.groupems-dashboard-inner {
+  padding: 0 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.groupems-admin-dashboard {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.groupems-overview-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 2%;
+  margin-top: 12px;
+}
+
+.groupems-card {
+  flex: 0 0 23%;
+  background: #c21b17;
+  color: #fff;
+  border-radius: 6px;
+  padding: 18px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.groupems-card-content {
+  text-align: center;
+  width: 100%;
+}
+
+.groupems-card-number {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.groupems-card-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.groupems-tabs-wrapper {
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.groupems-ant-tabs .ant-tabs-nav {
+  margin: 0;
+}
+
+.groupems-ant-tabs .ant-tabs-tab {
+  background: #fff;
+  border: 1px solid #c21b17;
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 0;
+  transition: 0.2s;
+}
+
+.groupems-ant-tabs .ant-tabs-tab .ant-tabs-tab-btn {
+  padding: 8px 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.groupems-ant-tabs .ant-tabs-tab:not(.ant-tabs-tab-active):hover {
+  background: #fbeaea;
+}
+
+.groupems-ant-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  background: #c21b17;
+}
+
+.groupems-ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.groupems-ant-tabs .ant-tabs-ink-bar {
+  display: none;
+}
+
+.groupems-ant-tabs .ant-tabs-content-holder {
+  margin-top: 12px;
+}
+
+.groupems-cell-ellipsis {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 24px;
+  line-height: 24px;
+}
+
+.groupems-cell-click {
+  cursor: pointer;
+  color: #1677ff;
+  font-weight: 500;
+}
+
+.groupems-cell-click:hover {
+  text-decoration: underline;
+}
+
+.groupems-subject-text {
+  font-weight: 500;
+  color: #333;
+  max-width: 300px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.day-badge {
+  min-width: 26px;
+  height: 26px;
+  background: #c40000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.custom-table .ant-table-cell {
+  vertical-align: middle;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  position: relative;
+  font-size: 12px;
+}
+
+.custom-table .ant-table-tbody > tr > td {
+  line-height: 20px;
+}
+
+.ems-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.ems-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px 3px;
+  border-radius: 14px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  white-space: nowrap;
+}
+
+.ems-pill-forward {
+  border-color: #2f54eb;
+  color: #2f54eb;
+}
+
+.ems-pill-spam {
+  border-color: #a8071a;
+  color: #a8071a;
+}
+
+.ems-pill-neutral {
+  border-color: #999;
+  color: #555;
+}
+
+/* WORKBENCH LAYOUT - LEFT PANEL DRIVES HEIGHT */
+.workbench-container {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.workbench-left-panel,
+.workbench-right-panel {
+  flex: 1;
+  min-width: 0;
+}
+
+.workbench-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.workbench-card .ant-card-body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.workbench-left-panel .workbench-scroll-content {
+  flex: 1;
+  overflow-y: visible;
+  height: auto;
+  min-height: auto;
+  max-height: none;
+}
+
+.workbench-right-panel.js-matched-height .workbench-card {
+  height: var(--left-panel-height, 400px) !important;
+}
+
+.workbench-right-panel.js-matched-height .workbench-scroll-content {
+  flex: 1;
+  overflow-y: auto;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+
+.workbench-right-panel:not(.js-matched-height) .workbench-scroll-content {
+  height: 400px;
+  min-height: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.email-content-body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* WORKBENCH FORM ELEMENTS FULL WIDTH */
+.workbench-card .workbench-scroll-content .ant-form,
+.workbench-card .workbench-scroll-content .ant-form-item,
+.workbench-card .workbench-scroll-content .ant-form-item-control,
+.workbench-card .workbench-scroll-content .ant-form-item-control-input,
+.workbench-card .workbench-scroll-content .ant-form-item-control-input-content {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+.workbench-card .workbench-scroll-content .ant-input,
+.workbench-card .workbench-scroll-content .ant-input-textarea,
+.workbench-card .workbench-scroll-content textarea,
+.workbench-card .workbench-scroll-content .ant-select,
+.workbench-card .workbench-scroll-content .ant-select-selector {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+.workbench-card .draft-form .ant-form-item,
+.workbench-card .draft-form .ant-form-item-control,
+.workbench-card .draft-form .ant-form-item-control-input,
+.workbench-card .draft-form .ant-form-item-control-input-content,
+.workbench-card .draft-form .ant-input,
+.workbench-card .draft-form .ant-input-textarea,
+.workbench-card .draft-form textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+.send-comm-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.send-mode-switch {
+  margin-left: auto;
+}
+
+.wrap-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.attachments-list {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+/* DRAFT FORM FULL WIDTH */
+.draft-form .ant-form-item,
+.draft-form .ant-form-item-control,
+.draft-form .ant-form-item-control-input,
+.draft-form .ant-form-item-control-input-content,
+.draft-form .ant-input,
+.draft-form .ant-input-textarea,
+.draft-form textarea,
+.draft-body-textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* ADMIN LAYOUT - 50/50 CARDS */
+.groupems-two-col-row {
+  display: flex !important;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.groupems-col-equal {
+  flex: 1 !important;
+  max-width: 50% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.groupems-equal-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.groupems-equal-card .ant-card-body {
+  padding: 16px !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.groupems-card-inner-scroll {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  padding-right: 4px !important;
+  scrollbar-gutter: stable !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  min-height: 0 !important;
+}
+
+.email-html-body {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow-y: auto;
+}
+
+/* FORM ELEMENTS FULL WIDTH - More Specific Targeting */
+.groupems-equal-card .groupems-card-inner-scroll .ant-form,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item-control,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item-control-input,
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  .ant-form-item-control-input-content {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Input elements in admin dashboard cards */
+.groupems-equal-card .groupems-card-inner-scroll .ant-input,
+.groupems-equal-card .groupems-card-inner-scroll .ant-input-textarea,
+.groupems-equal-card .groupems-card-inner-scroll textarea,
+.groupems-equal-card .groupems-card-inner-scroll .ant-select,
+.groupems-equal-card .groupems-card-inner-scroll .ant-select-selector {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  min-width: 100% !important;
+}
+
+/* Specific fix for TextArea elements that might have inline styles */
+.groupems-equal-card textarea[style*="width"] {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Draft form specific targeting */
+.groupems-equal-card .draft-form .ant-form-item,
+.groupems-equal-card .draft-form .ant-form-item-control,
+.groupems-equal-card .draft-form .ant-form-item-control-input,
+.groupems-equal-card .draft-form .ant-form-item-control-input-content,
+.groupems-equal-card .draft-form .ant-input,
+.groupems-equal-card .draft-form .ant-input-textarea,
+.groupems-equal-card .draft-form textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Override any conflicting width styles in the admin cards */
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  .ant-form-item-control-input-content
+  > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Ensure the draft body textarea specifically gets full width */
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  textarea[placeholder*="Compose"] {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* ADMIN LAYOUT - 50/50 CARDS */
+.groupems-two-col-row {
+  display: flex !important;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.groupems-col-equal {
+  flex: 1 !important;
+  max-width: 50% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.groupems-equal-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.groupems-equal-card .ant-card-body {
+  padding: 16px !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.groupems-card-inner-scroll {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  padding-right: 4px !important;
+  scrollbar-gutter: stable !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  min-height: 0 !important;
+}
+
+.email-html-body {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow-y: auto;
+}
+
+/* FORM ELEMENTS FULL WIDTH - More Specific Targeting */
+.groupems-equal-card .groupems-card-inner-scroll .ant-form,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item-control,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item-control-input,
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  .ant-form-item-control-input-content {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Input elements in admin dashboard cards */
+.groupems-equal-card .groupems-card-inner-scroll .ant-input,
+.groupems-equal-card .groupems-card-inner-scroll .ant-input-textarea,
+.groupems-equal-card .groupems-card-inner-scroll textarea,
+.groupems-equal-card .groupems-card-inner-scroll .ant-select,
+.groupems-equal-card .groupems-card-inner-scroll .ant-select-selector {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  min-width: 100% !important;
+}
+
+/* Specific fix for TextArea elements that might have inline styles */
+.groupems-equal-card textarea[style*="width"] {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Draft form specific targeting */
+.groupems-equal-card .draft-form .ant-form-item,
+.groupems-equal-card .draft-form .ant-form-item-control,
+.groupems-equal-card .draft-form .ant-form-item-control-input,
+.groupems-equal-card .draft-form .ant-form-item-control-input-content,
+.groupems-equal-card .draft-form .ant-input,
+.groupems-equal-card .draft-form .ant-input-textarea,
+.groupems-equal-card .draft-form textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Override any conflicting width styles in the admin cards */
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  .ant-form-item-control-input-content
+  > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Ensure the draft body textarea specifically gets full width */
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  textarea[placeholder*="Compose"] {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* ADMIN LAYOUT - 50/50 CARDS */
+.groupems-two-col-row {
+  display: flex !important;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.groupems-col-equal {
+  flex: 1 !important;
+  max-width: 50% !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.groupems-equal-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.groupems-equal-card .ant-card-body {
+  padding: 16px !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.groupems-card-inner-scroll {
+  flex: 1 !important;
+  overflow-y: auto !important;
+  padding-right: 4px !important;
+  scrollbar-gutter: stable !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  min-height: 0 !important;
+}
+
+.email-html-body {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  overflow-y: auto;
+}
+
+/* FORM ELEMENTS FULL WIDTH - More Specific Targeting */
+.groupems-equal-card .groupems-card-inner-scroll .ant-form,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item-control,
+.groupems-equal-card .groupems-card-inner-scroll .ant-form-item-control-input,
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  .ant-form-item-control-input-content {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Input elements in admin dashboard cards */
+.groupems-equal-card .groupems-card-inner-scroll .ant-input,
+.groupems-equal-card .groupems-card-inner-scroll .ant-input-textarea,
+.groupems-equal-card .groupems-card-inner-scroll textarea,
+.groupems-equal-card .groupems-card-inner-scroll .ant-select,
+.groupems-equal-card .groupems-card-inner-scroll .ant-select-selector {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  min-width: 100% !important;
+}
+
+/* Specific fix for TextArea elements that might have inline styles */
+.groupems-equal-card textarea[style*="width"] {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Draft form specific targeting */
+.groupems-equal-card .draft-form .ant-form-item,
+.groupems-equal-card .draft-form .ant-form-item-control,
+.groupems-equal-card .draft-form .ant-form-item-control-input,
+.groupems-equal-card .draft-form .ant-form-item-control-input-content,
+.groupems-equal-card .draft-form .ant-input,
+.groupems-equal-card .draft-form .ant-input-textarea,
+.groupems-equal-card .draft-form textarea {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* Override any conflicting width styles in the admin cards */
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  .ant-form-item-control-input-content
+  > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Ensure the draft body textarea specifically gets full width */
+.groupems-equal-card
+  .groupems-card-inner-scroll
+  textarea[placeholder*="Compose"] {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.groupems-user-main-wrapper {
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.groupems-user-main-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 24px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.user-card-stats-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.user-card-stats-row .user-stat-card {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.user-filter-bar-card {
+  background: #f9f9f9;
+  border: 1px solid #ececec;
+  padding: 16px 20px 12px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.user-table-card {
+  border: 1px solid #ececec;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 4px 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-table-card .ant-table {
+  padding: 0 12px 8px;
+}
+
+.user-table-card .ant-table-thead > tr > th {
+  background: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.groupems-filter-row {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.groupems-filter-inner {
+  width: 100%;
+}
+
+.primary-btn.ant-btn-primary {
+  background: #c21b17;
+  border-color: #c21b17;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.primary-btn.ant-btn-primary:hover,
+.primary-btn.ant-btn-primary:focus {
+  background: #a01210;
+  border-color: #a01210;
+}
+
+.refresh-inline-btn,
+.export-inline-btn {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  background: #c21b17;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.refresh-inline-btn:hover,
+.export-inline-btn:hover {
+  background: #a31210;
+  color: #fff;
+}
+
+.refresh-inline-btn:active,
+.export-inline-btn:active {
+  transform: translateY(1px);
+}
+
+.attachment-upload-btn.ant-btn {
+  background: #c21b17;
+  border-color: #c21b17;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.attachment-upload-btn.ant-btn:hover,
+.attachment-upload-btn.ant-btn:focus {
+  background: #a01210;
+  border-color: #a01210;
+  color: #fff;
+}
+
+.attachment-upload-btn.ant-btn:active {
+  background: #8d0f0d;
+  border-color: #8d0f0d;
+  color: #fff;
+}
+
+.attachment-upload-btn.ant-btn[disabled],
+.attachment-upload-btn.ant-btn[disabled]:hover {
+  background: #d9d9d9;
+  border-color: #d9d9d9;
+  color: #777;
+  font-weight: 600;
+}
+
+.trail-mail-btn,
+.trail-mail-btn.ant-btn {
+  background: #c21b17;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.trail-mail-btn.ant-btn:hover,
+.trail-mail-btn.ant-btn:focus {
+  background: #a01210;
+  color: #fff;
+}
+
+.trail-mail-row {
+  margin: 4px 0 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.comm-switch.ant-switch {
+  min-width: 70px;
+  height: 28px;
+  line-height: 26px;
+}
+
+.comm-switch .ant-switch-inner {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.comm-switch-green.ant-switch-checked {
+  background: #1a8f34 !important;
+}
+
+.comm-switch-green.ant-switch-checked:hover {
+  background: #147428 !important;
+}
+
+.comm-switch-red.ant-switch {
+  background: #c21b17 !important;
+}
+
+.comm-switch-red.ant-switch:hover {
+  background: #a01210 !important;
+}
+
+.send-btn.send-btn-green {
+  background: #1a8f34 !important;
+  color: #fff !important;
+  border: none;
+}
+
+.send-btn.send-btn-green:hover {
+  background: #147428 !important;
+}
+
+.send-btn.send-btn-red {
+  background: #c21b17 !important;
+  color: #fff !important;
+  border: none;
+}
+
+.send-btn.send-btn-red:hover {
+  background: #a01210 !important;
+}
+
+.cust-input,
+.cust-input.ant-input,
+.cust-input .ant-select-selector {
+  height: 34px;
+  font-size: 13px;
+}
+
+.inputs-label .ant-form-item-label > label {
+  font-weight: 600;
+  color: #333;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.switch-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* SCROLLBARS */
+.groupems-card-inner-scroll::-webkit-scrollbar,
+.email-html-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.groupems-card-inner-scroll::-webkit-scrollbar-track,
+.email-html-body::-webkit-scrollbar-track {
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.groupems-card-inner-scroll::-webkit-scrollbar-thumb,
+.email-html-body::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 4px;
+}
+
+.groupems-card-inner-scroll::-webkit-scrollbar-thumb:hover,
+.email-html-body::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1400px) {
+  .groupems-dashboard-inner {
+    padding: 0 20px;
+  }
+  .assigned-filter-bar {
+    gap: 12px;
+  }
+  .assigned-filter-bar .filter-item {
+    flex: 1 1 30%;
+    min-width: 200px;
+  }
+  .assigned-filter-bar .filter-actions {
+    flex: 1 1 100%;
+    justify-content: flex-start;
+    order: 4;
+  }
+  .assigned-filter-bar .filter-actions .primary-btn {
+    flex: 0 0 200px;
+  }
+  .groupems-card {
+    padding: 14px 10px;
+  }
+  .groupems-card-number {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .groupems-subject-text {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .groupems-subject-text {
+    max-width: 240px;
+  }
+  .ems-metric-chip {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .workbench-container {
+    flex-direction: column;
+  }
+  .workbench-left-panel,
+  .workbench-right-panel {
+    flex: none;
+  }
+  .workbench-left-panel .workbench-scroll-content {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+  }
+  .workbench-right-panel .workbench-scroll-content {
+    height: 300px;
+    min-height: 300px;
+    max-height: 60vh;
+  }
+  .groupems-two-col-row {
+    flex-direction: column !important;
+  }
+  .groupems-col-equal {
+    flex: none !important;
+    max-width: none !important;
+    width: 100% !important;
+    margin-bottom: 16px;
+  }
+  .assigned-filter-bar .filter-item {
+    flex: 1 1 45%;
+  }
+  .assigned-filter-bar .filter-actions {
+    flex: 1 1 100%;
+    justify-content: stretch;
+  }
+  .assigned-filter-bar .filter-actions .primary-btn {
+    flex: 1;
+  }
+  .groupems-user-main-wrapper {
+    padding: 0 20px;
+  }
+  .user-card-stats-row {
+    gap: 12px;
+  }
+}
+
+.groupems-ant-tabs
+  .ant-tabs-nav
+  .ant-tabs-tab.ant-tabs-tab-active
+  .ant-tabs-tab-btn {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .groupems-overview-wrapper {
+    flex-wrap: wrap;
+  }
+  .groupems-card {
+    flex: 0 0 48%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .groupems-subject-text {
+    max-width: 200px;
+  }
+  .ems-metric-chip {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 640px) {
+  .assigned-filter-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .assigned-filter-bar .filter-item,
+  .assigned-filter-bar .filter-actions {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  .assigned-filter-bar .filter-actions {
+    justify-content: stretch;
+  }
+  .assigned-filter-bar .filter-actions .primary-btn {
+    flex: 1;
+  }
+  .groupems-user-main-card {
+    padding: 18px 16px 24px;
+  }
+  .user-filter-bar-card {
+    padding: 14px 14px 10px;
+  }
+  .refresh-inline-btn,
+  .export-inline-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .groupems-card {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .ems-metric-chip {
+    flex: 0 0 100%;
+  }
+}
+
+/* Email Meta Container */
+.email-meta {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Email Meta Row */
+.email-meta-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  width: 100%;
+  gap: 8px;
+}
+
+/* Email Meta Label */
+.email-meta-label {
+  font-weight: bold;
+  color: #d32f2f;
+  min-width: 120px;
+  flex-shrink: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Email Meta Value */
+.email-meta-value {
+  background-color: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.email-meta-wrap {
+  word-break: break-all;
+  hyphens: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .email-meta-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .email-meta-label {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .email-meta-value {
+    width: 100%;
+  }
+}
+
+/* Ensure full width in the card container */
+.groupems-equal-card .email-meta,
+.groupems-equal-card .email-meta-row,
+.groupems-equal-card .email-meta-value {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+}
+
+/* EMS METRICS RIBBON */
+.ems-metrics-ribbon {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 4px 0 14px;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+}
+
+.ems-metrics-row-static {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  width: 100%;
+}
+
+.ems-metric-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.ems-metric-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ems-metric-label {
+  font-weight: 700;
+  color: #c21b17;
+}
+
+.ems-metric-value {
+  font-weight: 600;
+  color: #333;
+}

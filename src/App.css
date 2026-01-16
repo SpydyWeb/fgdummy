@@ -1,0 +1,15 @@
+@import 'antd/dist/reset.css';
+@import 'bootstrap/dist/css/bootstrap.css';
+
+.profile-alert {
+  display: flex;
+  color: red;
+  font-size: x-small;
+}
+
+.pos-header .ant-table-thead > tr > th {
+  background: lightgray;
+  font-size: 0.9rem;
+  /* font-weight: bolder; */
+  padding: 0.6rem;
+}
